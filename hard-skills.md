@@ -20,7 +20,7 @@ Objectif : logique, structures, fonctions, erreurs.
 
 ### Notions (ordre)
 - [ ] [Variables et types primitifs](./courses/variables-et-types-primitifs.md)
-- [ ] Opérateurs (arithmétiques, comparaison, logique)
+- [ ] [Opérateurs](./courses/operateurs.md) (arithmétiques, comparaison, logique)
 - [ ] Conditions (`if`, `else`, `switch`, ternaire)
 - [ ] Boucles (`for`, `while`, `for...of`, `.map/.filter/.reduce`)
 - [ ] Fonctions (paramètres, retour, pure vs impure)
