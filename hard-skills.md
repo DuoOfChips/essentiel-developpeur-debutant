@@ -1,13 +1,13 @@
 # Parcours Hard Skills — Développeur Full Stack & Conception Logicielle
 
 ## Phase 0 — Préparer le terrain
-- [x] Comprendre ce qu’est un programme
-- [x] Installer et utiliser correctement l’environnement de développement
+- [ ] Comprendre ce qu’est un programme
+- [ ] Installer et utiliser correctement l’environnement de développement
 
 ### Notions
-- [x] Programme : code → compilation/transpilation → exécution
-- [x] Node.js + NPM
-- [x] VSCode : debugging, extensions essentielles
+- [ ] Programme : code → compilation/transpilation → exécution
+- [ ] Node.js + NPM
+- [ ] VSCode : debugging, extensions essentielles
 
 ### Ressources
 - [ ] https://www.youtube.com/watch?v=ENrzD9HAZK4 (Node.js expliqué)
@@ -19,7 +19,7 @@
 Objectif : logique, structures, fonctions, erreurs.
 
 ### Notions (ordre)
-- [x] Variables et types primitifs
+- [ ] Variables et types primitifs
 - [ ] Opérateurs (arithmétiques, comparaison, logique)
 - [ ] Conditions (`if`, `else`, `switch`, ternaire)
 - [ ] Boucles (`for`, `while`, `for...of`, `.map/.filter/.reduce`)
