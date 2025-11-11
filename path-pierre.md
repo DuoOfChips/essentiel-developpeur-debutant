@@ -1,0 +1,146 @@
+# Parcours Hard Skills — Développeur Full Stack & Conception Logicielle
+
+## Phase 0 — Préparer le terrain
+- [x] Comprendre ce qu’est un programme
+- [x] Installer et utiliser correctement l’environnement de développement
+
+### Notions
+- [x] Programme : code → compilation/transpilation → exécution
+- [x] Node.js + NPM
+- [x] VSCode : debugging, extensions essentielles
+
+### Ressources
+- [ ] https://www.youtube.com/watch?v=ENrzD9HAZK4 (Node.js expliqué)
+- [ ] https://www.youtube.com/watch?v=VqCgcpAypFQ (VSCode)
+
+---
+
+## Phase 1 — Bases de la Programmation
+Objectif : logique, structures, fonctions, erreurs.
+
+### Notions (ordre)
+- [x] Variables et types primitifs
+- [ ] Opérateurs (arithmétiques, comparaison, logique)
+- [ ] Conditions (`if`, `else`, `switch`, ternaire)
+- [ ] Boucles (`for`, `while`, `for...of`, `.map/.filter/.reduce`)
+- [ ] Fonctions (paramètres, retour, pure vs impure)
+- [ ] Lecture de messages d’erreurs (+ méthode d’analyse)
+
+### Mini-Projets
+- [ ] Calculatrice CLI
+- [ ] Convertisseur d’unités
+- [ ] Générateur de menus aléatoires
+
+### Ressources
+- [ ] https://www.youtube.com/watch?v=W6NZfCO5SIk (bases JS)
+- [ ] https://www.youtube.com/watch?v=s9wW2PpJsmQ (boucles)
+- [ ] https://www.youtube.com/watch?v=PkZNo7MFNFg&t=330s (fonctions)
+
+---
+
+## Phase 2 — TypeScript Propre
+Objectif : typage strict + structuration modulaire.
+
+### Notions
+- [ ] Types primitifs vs composés
+- [ ] `type` vs `interface` (quand utiliser quoi)
+- [ ] Objets + immutabilité (spread, référence vs valeur)
+- [ ] Tableaux + méthodes fonctionnelles (`map`, `filter`, `reduce`)
+- [ ] `enum` / `const enum`
+- [ ] Fonctions → signatures typées
+- [ ] Gestion des erreurs (`try/catch`, erreurs custom)
+- [ ] Imports/Exports organisés
+
+### Mini-Projet
+- [ ] Todolist typée + refactor fonctionnel (`map/filter/reduce`)
+
+### Ressources
+- [ ] https://www.youtube.com/watch?v=30LWjhZzg50 (TS course)
+- [ ] https://www.youtube.com/c/mattpocockuk/videos (TS clean practices)
+
+---
+
+## Phase 3 — Clean Code + OOP + SOLID
+Objectif : écrire du code **maintenable, lisible, modulaire**.
+
+### Notions Clean Code
+- [ ] Nommage clair
+- [ ] Fonctions courtes + une seule responsabilité
+- [ ] DRY (pas de duplication)
+- [ ] KISS (simplicité)
+- [ ] YAGNI (ne pas sur-concevoir)
+
+### Notions OOP
+- [ ] Classes, objets, méthodes
+- [ ] Encapsulation
+- [ ] **Composition > Héritage**
+- [ ] Interfaces vs classes abstraites
+
+### SOLID
+- [ ] S : Single Responsibility
+- [ ] O : Open/Closed
+- [ ] L : Liskov Substitution
+- [ ] I : Interface Segregation
+- [ ] D : Dependency Inversion (injection au lieu d’instancier)
+
+### Mini-Projets
+- [ ] Panier e-commerce (OOP + responsabilité)
+- [ ] Service de notifications UI (Pattern Builder)
+
+### Ressources
+- [ ] https://www.youtube.com/watch?v=pTB30aXS77U (SOLID)
+- [ ] https://www.youtube.com/watch?v=7EmboKQH8lM (Clean Code concret)
+
+---
+
+## Phase 4 — Design Patterns
+Objectif : éviter de réinventer la roue et structurer le code.
+
+### Patterns prioritaires (avec usages concrets web)
+| Pattern | Usage typique |
+|---|---|
+| Builder | configurer snackbars / modals / formulaires |
+| Factory | créer services API selon environnement |
+| Strategy | remplacer `if/else` multiples (ex: calcul TVA) |
+| Adapter | uniformiser API externes |
+| Observer | streaming d’événements UI / RxJS |
+| DTO | contrats Front ↔ Back |
+
+### Ressource
+- [ ] https://refactoring.guru/fr/design-patterns
+
+---
+
+## Phase 5 — Architecture Web
+Objectif : full-stack Angular + NestJS structuré.
+
+### Angular
+- [ ] Modules, Components, Services
+- [ ] Inputs/Outputs
+- [ ] Dependency Injection
+- [ ] RxJS (progressif : map → switchMap → debounceTime)
+- [ ] State minimal (signals au début)
+
+### NestJS
+- [ ] Modules, Controllers, Providers
+- [ ] DTO + Validation
+- [ ] Repositories + Database
+- [ ] Auth JWT
+- [ ] Guards & Interceptors
+
+### Ressources
+- [ ] Angular : https://www.youtube.com/watch?v=3qBXWUpoPHo
+- [ ] NestJS : https://www.youtube.com/watch?v=F_oOtaxb0L8
+
+---
+
+## Phase 6 — Enterprise Integration Patterns
+Objectif : systèmes modulaires et résilients.
+
+### EIP utiles
+- [ ] Event-driven architecture
+- [ ] Message Queue (RabbitMQ / Kafka)
+- [ ] Dead Letter Queue
+
+### Ressource
+- [ ] https://www.youtube.com/watch?v=deG25y_r6OY
