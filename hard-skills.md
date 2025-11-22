@@ -1,5 +1,7 @@
 # Parcours Hard Skills — Développeur Full Stack & Conception Logicielle
 
+Cours orienté sur les notions de bases, les bonnes pratiques et l'écosystème Web (Angular 20+ et nestJS)
+
 ## Phase 0 — Préparer le terrain
 - [ ] Comprendre ce qu’est un programme
 - [ ] Installer et utiliser correctement l’environnement de développement
