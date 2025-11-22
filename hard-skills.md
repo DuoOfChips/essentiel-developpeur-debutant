@@ -21,10 +21,10 @@ Objectif : logique, structures, fonctions, erreurs.
 ### Notions (ordre)
 - [ ] [Variables et types primitifs](./courses/variables-et-types-primitifs.md)
 - [ ] [Opérateurs](./courses/operateurs.md) (arithmétiques, comparaison, logique)
-- [ ] Conditions (`if`, `else`, `switch`, ternaire)
-- [ ] Boucles (`for`, `while`, `for...of`, `.map/.filter/.reduce`)
-- [ ] Fonctions (paramètres, retour, pure vs impure)
-- [ ] Lecture de messages d’erreurs (+ méthode d’analyse)
+- [ ] [Conditions](./courses/conditons.md) (`if`, `else`, `switch`, ternaire)
+- [ ] [Boucles](./courses/boucles.md) (`for`, `while`, `for...of`, `.map/.filter/.reduce`)
+- [ ] [Fonctions](./courses/fonctions.md) (paramètres, retour, pure vs impure)
+- [ ] [Gestion des erreurs et lecture des messages](./courses/gestion-erreurs.md) (+ méthode d’analyse)
 
 ### Mini-Projets
 - [ ] Calculatrice CLI
