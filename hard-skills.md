@@ -61,8 +61,8 @@ Objectif : typage strict + structuration modulaire.
 - [ ] [Objets + immutabilité (spread, référence vs valeur)](./courses/objets-immutabilite.md)
 - [ ] [Tableaux + méthodes fonctionnelles (`map`, `filter`, `reduce`)](./courses/tableaux-methodes-fonctionnelles.md)
 - [ ] [`enum` / `const enum`](./courses/enum-const-enum.md)
-- [ ] Fonctions → signatures typées
-- [ ] Gestion des erreurs (`try/catch`, erreurs custom)
+- [ ] [Fonctions](./courses/functions.md) → signatures typées
+- [ ] [Gestion des erreurs](./courses/gestion-erreurs.md) (`try/catch`, erreurs custom)
 - [ ] [Imports/Exports organisés](./courses/imports-exports.md)
 
 ### Mini-Projet
