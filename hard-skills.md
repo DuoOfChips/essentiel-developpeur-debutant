@@ -41,6 +41,17 @@ Objectif : logique, structures, fonctions, erreurs.
 
 ---
 
+## Phase 1.5 — Web et Réseau (Fondamentaux)
+Objectif : Comprendre comment le web fonctionne.
+
+### Notions
+- [ ] [HTTP et APIs : Requêtes, Réponses, Status Codes](./courses/http-api-fondamentaux.md)
+- [ ] JSON : Format d'échange de données
+- [ ] Client-Serveur : Architecture web
+- [ ] CORS : Cross-Origin Resource Sharing
+
+---
+
 ## Phase 2 — TypeScript Propre
 Objectif : typage strict + structuration modulaire.
 
