@@ -7,9 +7,9 @@ Cours orienté sur les notions de bases, les bonnes pratiques et l'écosystème 
 - [ ] Installer et utiliser correctement l’environnement de développement
 
 ### Notions
-- [ ] Programme : code → compilation/transpilation → exécution
-- [ ] Node.js + NPM
-- [ ] VSCode : debugging, extensions essentielles
+- [ ] [Programme : code → compilation/transpilation → exécution](./courses/programme-compilation-execution.md)
+- [ ] [Node.js + NPM](./courses/nodejs-npm.md)
+- [ ] [VSCode : debugging, extensions essentielles](./courses/vscode-debugging-extensions.md)
 
 ### Ressources
 - [ ] https://www.youtube.com/watch?v=ENrzD9HAZK4 (Node.js expliqué)
@@ -27,7 +27,7 @@ Objectif : logique, structures, fonctions, erreurs.
 - [ ] [Boucles](./courses/boucles.md) (`for`, `while`, `for...of`, `.map/.filter/.reduce`)
 - [ ] [Fonctions](./courses/fonctions.md) (paramètres, retour, pure vs impure)
 - [ ] [Gestion des erreurs et lecture des messages](./courses/gestion-erreurs.md) (+ méthode d’analyse)
-- [ ] [Git & GitHub](https://roadmap.sh/git-github)
+- [ ] [Git & GitHub](./courses/git-github.md)
 
 ### Mini-Projets
 - [ ] Calculatrice CLI
@@ -45,14 +45,14 @@ Objectif : logique, structures, fonctions, erreurs.
 Objectif : typage strict + structuration modulaire.
 
 ### Notions
-- [ ] Types primitifs vs composés
-- [ ] `type` vs `interface` (quand utiliser quoi)
-- [ ] Objets + immutabilité (spread, référence vs valeur)
-- [ ] Tableaux + méthodes fonctionnelles (`map`, `filter`, `reduce`)
-- [ ] `enum` / `const enum`
+- [ ] [Types primitifs vs composés](./courses/types-primitifs-vs-composes.md)
+- [ ] [`type` vs `interface` (quand utiliser quoi)](./courses/type-vs-interface.md)
+- [ ] [Objets + immutabilité (spread, référence vs valeur)](./courses/objets-immutabilite.md)
+- [ ] [Tableaux + méthodes fonctionnelles (`map`, `filter`, `reduce`)](./courses/tableaux-methodes-fonctionnelles.md)
+- [ ] [`enum` / `const enum`](./courses/enum-const-enum.md)
 - [ ] Fonctions → signatures typées
 - [ ] Gestion des erreurs (`try/catch`, erreurs custom)
-- [ ] Imports/Exports organisés
+- [ ] [Imports/Exports organisés](./courses/imports-exports.md)
 
 ### Mini-Projet
 - [ ] Todolist typée + refactor fonctionnel (`map/filter/reduce`)
@@ -67,11 +67,10 @@ Objectif : typage strict + structuration modulaire.
 Objectif : écrire du code **maintenable, lisible, modulaire**.
 
 ### Notions Clean Code
-- [ ] Nommage clair
-- [ ] Fonctions courtes + une seule responsabilité
-- [ ] DRY (pas de duplication)
-- [ ] KISS (simplicité)
-- [ ] YAGNI (ne pas sur-concevoir)
+- [ ] [Nommage clair, fonctions courtes, DRY, KISS, YAGNI](./courses/clean-code-fondamentaux.md)
+- [ ] Une seule responsabilité (SRP)
+- [ ] Refactoring sans casser
+- [ ] Éviter la duplication
 
 ### Notions OOP
 - [ ] Classes, objets, méthodes

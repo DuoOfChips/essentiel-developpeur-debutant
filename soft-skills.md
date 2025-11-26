@@ -1,7 +1,7 @@
 # Parcours Soft Skills — Autonomie, Communication, Prise de Décision
 
 ## Fondations (à travailler en continu)
-- [ ] Lire et comprendre un message d’erreur
+- [ ] [Lire et comprendre un message d'erreur](./courses/lire-comprendre-erreurs.md)
 - [ ] Formuler une question clairement
 - [ ] Reformuler ce qu’on a compris
 
