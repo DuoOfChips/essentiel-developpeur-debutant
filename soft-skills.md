@@ -49,6 +49,7 @@
 - [ ] Prioriser les fonctionnalités par valeur d’usage
 - [ ] Reconnaître la dette technique et savoir quand l’accepter
 - [ ] Décider quand dire “c’est assez bon pour maintenant” (contexte coût/priorité, criticité, temps).
+- [ ] Comprendre que rien n'est une évidence (si c'est évident sans confirmation nécessaire : très mauvais signe)
 
 ### Outil pratique
 - Tableau à trois colonnes :
