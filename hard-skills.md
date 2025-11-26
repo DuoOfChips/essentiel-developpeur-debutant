@@ -27,6 +27,7 @@ Objectif : logique, structures, fonctions, erreurs.
 - [ ] [Boucles](./courses/boucles.md) (`for`, `while`, `for...of`, `.map/.filter/.reduce`)
 - [ ] [Fonctions](./courses/fonctions.md) (paramètres, retour, pure vs impure)
 - [ ] [Gestion des erreurs et lecture des messages](./courses/gestion-erreurs.md) (+ méthode d’analyse)
+- [ ] [Git & GitHub](https://roadmap.sh/git-github)
 
 ### Mini-Projets
 - [ ] Calculatrice CLI
@@ -77,6 +78,9 @@ Objectif : écrire du code **maintenable, lisible, modulaire**.
 - [ ] Encapsulation
 - [ ] **Composition > Héritage**
 - [ ] Interfaces vs classes abstraites
+
+### Architecture logicielle
+- [ ] [Architecture Logicelle](https://roadmap.sh/software-design-architecture)
 
 ### SOLID
 - [ ] S : Single Responsibility
@@ -146,3 +150,8 @@ Objectif : systèmes modulaires et résilients.
 
 ### Ressource
 - [ ] https://www.youtube.com/watch?v=deG25y_r6OY
+
+---
+
+## Phase 7 - Cloud
+- [ ] [Roadmap google cloud](https://roadmap.sh/ai/roadmap/google-cloud-platform-mastery)
