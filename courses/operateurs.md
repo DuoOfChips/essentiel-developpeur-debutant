@@ -47,7 +47,7 @@ Exemple:
 
 ```ts
 let prixHT = 120;
-let tva = 0.2;
+let tva = 0.2; // ici 20 %
 let prixTTC = prixHT * (1 + tva);
 console.log(prixTTC); // 144
 ```
