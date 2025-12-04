@@ -20,8 +20,8 @@ Objectif : logique, structures, fonctions, erreurs.
 
 ### Notions (ordre)
 - [x] Variables et types primitifs
-- [ ] Opérateurs (arithmétiques, comparaison, logique)
-- [ ] Conditions (`if`, `else`, `switch`, ternaire)
+- [x] Opérateurs (arithmétiques, comparaison, logique)
+- [x] Conditions (`if`, `else`, `switch`, ternaire)
 - [ ] Boucles (`for`, `while`, `for...of`, `.map/.filter/.reduce`)
 - [ ] Fonctions (paramètres, retour, pure vs impure)
 - [ ] Lecture de messages d’erreurs (+ méthode d’analyse)
