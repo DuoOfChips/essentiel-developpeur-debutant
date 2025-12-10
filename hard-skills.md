@@ -46,7 +46,7 @@ Objectif : Comprendre comment le web fonctionne.
 
 ### Notions
 - [ ] [HTTP et APIs : Requêtes, Réponses, Status Codes](./courses/http-api-fondamentaux.md)
-- [ ] JSON : Format d'échange de données
+- [ ] [JSON](./courses/JSON.md) : Format d'échange de données
 - [ ] Client-Serveur : Architecture web
 - [ ] CORS : Cross-Origin Resource Sharing
 
