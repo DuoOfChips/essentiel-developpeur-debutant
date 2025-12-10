@@ -5,4 +5,4 @@ les notions essentielles pour devenir un développeur de valeur (pas juste un co
 
 [Savoir-être professionnel](./soft-skills.md)
 
-[Gestion de projet](./project-management.md)
+[Gestion de projet](./project-managment.md)
