@@ -315,12 +315,16 @@ Critères d'acceptation:
 
 **Estimation en Story Points :**
 ```
-1 point  = Très simple (< 2h)
-2 points = Simple (2-4h)
-3 points = Moyen (1 jour)
-5 points = Complexe (2-3 jours)
-8 points = Très complexe (> 3 jours)
+1 point  = Très simple (petite tâche bien comprise)
+2 points = Simple (tâche standard)
+3 points = Moyen (nécessite quelques ajustements)
+5 points = Complexe (plusieurs composants)
+8 points = Très complexe (incertitude élevée)
 13+ points = À découper en plus petites stories
+
+⚠️ Important: Les story points sont RELATIFS, pas des heures
+Exemple: Si "Login simple" = 3 points, alors
+"Login avec 2FA" pourrait être 5 points (plus complexe)
 ```
 
 ### 5.2 Sprint Backlog
