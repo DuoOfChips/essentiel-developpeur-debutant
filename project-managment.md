@@ -26,7 +26,8 @@ Gestion visuelle du flux de travail avec WIP limits et métriques pour optimiser
 
 ## Gestion des ressources (humaines)
 
-**Matrice RACI**
+**[Matrice RACI](./courses/matrice-raci.md)**
+Clarification des rôles et responsabilités avec 4 niveaux : Responsible, Accountable, Consulted, Informed.
 
 **Skills Matrix**
 
