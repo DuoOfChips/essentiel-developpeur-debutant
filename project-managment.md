@@ -2,9 +2,11 @@
 
 ## Gestion des objectifs
 
-**WBS (Work Breakdown Structure)**
+**[WBS (Work Breakdown Structure)](./courses/wbs-work-breakdown-structure.md)**
+Découpage hiérarchique du projet en tâches gérables pour une estimation précise et une répartition claire du travail.
 
-**MoScow**
+**[MoSCoW](./courses/moscow-priorisation.md)**
+Méthode de priorisation des fonctionnalités en Must have, Should have, Could have et Won't have pour se concentrer sur l'essentiel.
 
 ## Gestion du temps
 
@@ -12,17 +14,20 @@
 
 **Plannification PERT**
 
-**Scrum (Sprints, Velocity, Burndown Charts)**
+**[Scrum (Sprints, Velocity, Burndown Charts)](./courses/agile-scrum.md)**
+Méthode agile de gestion de projet itérative avec sprints de 2 semaines pour livrer rapidement de la valeur.
 
 ## Gestion des delais
 
 **Chemin critique (CPM: Critical Path Method)**
 
-**Kanban Flow Metrics (Lead Time / Cycle Time)**
+**[Kanban Flow Metrics (Lead Time / Cycle Time)](./courses/methode-kanban.md)**
+Gestion visuelle du flux de travail avec WIP limits et métriques pour optimiser la livraison continue.
 
 ## Gestion des ressources (humaines)
 
-**Matrice RACI**
+**[Matrice RACI](./courses/matrice-raci.md)**
+Clarification des rôles et responsabilités avec 4 niveaux : Responsible, Accountable, Consulted, Informed.
 
 **Skills Matrix**
 
@@ -72,7 +77,8 @@
 
 ## Gestion technique
 
-**GitFlow**
+**[GitFlow](./courses/gitflow.md)**
+Stratégie de gestion des branches Git avec main, develop, feature, release et hotfix pour un développement organisé.
 
 **Trunk-Based Development**
 
@@ -90,13 +96,15 @@
 
 **Gestion de projet SAFe/Less**
 
-**Méthode Kanban**
+**[Méthode Kanban](./courses/methode-kanban.md)**
+Flux continu avec visualisation du travail, WIP limits et métriques Lead Time/Cycle Time.
 
 **Méthode waterfall**
 
 **Principes Agile**
 
-**Agile Scrum**
+**[Agile Scrum](./courses/agile-scrum.md)**
+Framework agile avec rôles définis (PO, SM, Dev Team), sprints et cérémonies pour livraison itérative.
 
 **Rapid Application Development**
 
