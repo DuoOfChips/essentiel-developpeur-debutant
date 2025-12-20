@@ -3,8 +3,8 @@
 Cours orienté sur les notions de bases, les bonnes pratiques et l'écosystème Web (Angular 20+ et nestJS)
 
 ## Phase 0 — Préparer le terrain
-- [ ] Comprendre ce qu’est un programme
-- [ ] Installer et utiliser correctement l’environnement de développement
+- [ ] Comprendre ce qu'est un programme
+- [ ] Installer et utiliser correctement l'environnement de développement
 
 ### Notions
 - [ ] [Programme : code → compilation/transpilation → exécution](./courses/programme-compilation-execution.md)
@@ -26,12 +26,12 @@ Objectif : logique, structures, fonctions, erreurs.
 - [ ] [Conditions](./courses/conditions.md) (`if`, `else`, `switch`, ternaire)
 - [ ] [Boucles](./courses/boucles.md) (`for`, `while`, `for...of`, `.map/.filter/.reduce`)
 - [ ] [Fonctions](./courses/fonctions.md) (paramètres, retour, pure vs impure)
-- [ ] [Gestion des erreurs et lecture des messages](./courses/gestion-erreurs.md) (+ méthode d’analyse)
+- [ ] [Gestion des erreurs et lecture des messages](./courses/gestion-erreurs.md) (+ méthode d'analyse)
 - [ ] [Git & GitHub](./courses/git-github.md)
 
 ### Mini-Projets
 - [ ] Calculatrice CLI
-- [ ] Convertisseur d’unités
+- [ ] Convertisseur d'unités
 - [ ] Générateur de menus aléatoires
 
 ### Ressources
@@ -79,25 +79,24 @@ Objectif : écrire du code **maintenable, lisible, modulaire**.
 
 ### Notions Clean Code
 - [ ] [Nommage clair, fonctions courtes, DRY, KISS, YAGNI](./courses/clean-code-fondamentaux.md)
-- [ ] Une seule responsabilité (SRP)
-- [ ] Refactoring sans casser
-- [ ] Éviter la duplication
+- [ ] [Refactoring sans casser : techniques et bonnes pratiques](./courses/refactoring-sans-casser.md)
 
 ### Notions OOP
-- [ ] Classes, objets, méthodes
-- [ ] Encapsulation
-- [ ] **Composition > Héritage**
-- [ ] Interfaces vs classes abstraites
+- [ ] [Classes, objets, méthodes : fondamentaux de la POO](./courses/poo-classes-objets.md)
+- [ ] [Encapsulation : protéger et contrôler l'accès aux données](./courses/encapsulation.md)
+- [ ] [**Composition > Héritage** : pourquoi préférer la composition](./courses/composition-vs-heritage.md)
+- [ ] [Interfaces vs classes abstraites : quand utiliser quoi](./courses/interfaces-vs-classes-abstraites.md)
 
 ### Architecture logicielle
 - [ ] [Architecture Logicelle](https://roadmap.sh/software-design-architecture)
 
-### SOLID
-- [ ] S : Single Responsibility
-- [ ] O : Open/Closed
-- [ ] L : Liskov Substitution
-- [ ] I : Interface Segregation
-- [ ] D : Dependency Inversion (injection au lieu d’instancier)
+### SOLID - Les 5 principes de conception
+- [ ] [SOLID : tous les principes (S.O.L.I.D)](./courses/solid-principes.md)
+  - S : Single Responsibility Principle
+  - O : Open/Closed Principle
+  - L : Liskov Substitution Principle
+  - I : Interface Segregation Principle
+  - D : Dependency Inversion Principle
 
 ### Mini-Projets
 - [ ] Panier e-commerce (OOP + responsabilité)
@@ -119,7 +118,7 @@ Objectif : éviter de réinventer la roue et structurer le code.
 | Factory | créer services API selon environnement |
 | Strategy | remplacer `if/else` multiples (ex: calcul TVA) |
 | Adapter | uniformiser API externes |
-| Observer | streaming d’événements UI / RxJS |
+| Observer | streaming d'événements UI / RxJS |
 | DTO | contrats Front ↔ Back |
 
 ### Ressource
