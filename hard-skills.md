@@ -111,20 +111,58 @@ Objectif : écrire du code **maintenable, lisible, modulaire**.
 ## Phase 4 — Design Patterns
 Objectif : éviter de réinventer la roue et structurer le code.
 
-### Patterns prioritaires (avec usages concrets web)
-| Pattern | Usage typique | Cours |
-|---|---|---|
-| Builder | configurer snackbars / modals / formulaires | [Design Pattern : Builder](./courses/design-pattern-builder.md) |
-| Factory | créer services API selon environnement | [Design Pattern : Factory](./courses/design-pattern-factory.md) |
-| Strategy | remplacer `if/else` multiples (ex: calcul TVA) | [Design Pattern : Strategy](./courses/design-pattern-strategy.md) |
-| Adapter | uniformiser API externes | [Design Pattern : Adapter](./courses/design-pattern-adapter.md) |
-| Observer | streaming d'événements UI / RxJS | [Design Pattern : Observer](./courses/design-pattern-observer.md) |
-| DTO | contrats Front ↔ Back | [Design Pattern : DTO](./courses/design-pattern-dto.md) |
+### Patterns triés par fréquence d'utilisation (webapp métier)
+
+#### Patterns Créationnels (Creational Patterns)
+| Priorité | Pattern | Usage typique webapp métier | Cours |
+|----------|---------|----------------------------|-------|
+| ⭐⭐⭐ | Singleton | Services Angular, connexions DB, configurations | [Design Pattern : Singleton](./courses/design-pattern-singleton.md) |
+| ⭐⭐⭐ | Factory | Créer services API selon environnement, factories de composants | [Design Pattern : Factory](./courses/design-pattern-factory.md) |
+| ⭐⭐⭐ | Builder | Configurer snackbars / modals / formulaires / requêtes HTTP | [Design Pattern : Builder](./courses/design-pattern-builder.md) |
+| ⭐⭐ | Prototype | Cloner objets complexes, templates de documents | [Design Pattern : Prototype](./courses/design-pattern-prototype.md) |
+| ⭐ | Abstract Factory | Créer familles d'objets (ex: thèmes UI) | [Design Pattern : Abstract-Factory](./courses/design-pattern-abstract-factory.md) |
+
+#### Patterns Structurels (Structural Patterns)
+| Priorité | Pattern | Usage typique webapp métier | Cours |
+|----------|---------|----------------------------|-------|
+| ⭐⭐⭐ | Adapter | Uniformiser API externes, adapters pour librairies tierces | [Design Pattern : Adapter](./courses/design-pattern-adapter.md) |
+| ⭐⭐⭐ | Decorator | Interceptors Angular/NestJS, logs, auth, caching | [Design Pattern : Decorator](./courses/design-pattern-decorator.md) |
+| ⭐⭐⭐ | Facade | Simplifier API complexes, wrappers de services | [Design Pattern : Facade](./courses/design-pattern-facade.md) |
+| ⭐⭐⭐ | Proxy | Lazy loading, cache, guards Angular | [Design Pattern : Proxy](./courses/design-pattern-proxy.md) |
+| ⭐⭐ | Composite | Arbres de composants UI, menus hiérarchiques | [Design Pattern : Composite](./courses/design-pattern-composite.md) |
+| ⭐⭐ | Bridge | Séparer abstraction/implémentation (ex: multi-platforme) | [Design Pattern : Bridge](./courses/design-pattern-bridge.md) |
+| ⭐ | Flyweight | Optimiser mémoire pour grandes listes de données | [Design Pattern : Flyweight](./courses/design-pattern-flyweight.md) |
+
+#### Patterns Comportementaux (Behavioral Patterns)
+| Priorité | Pattern | Usage typique webapp métier | Cours |
+|----------|---------|----------------------------|-------|
+| ⭐⭐⭐ | Observer | Streaming d'événements UI / RxJS / WebSockets | [Design Pattern : Observer](./courses/design-pattern-observer.md) |
+| ⭐⭐⭐ | Strategy | Remplacer `if/else` multiples (calcul TVA, tri, validation) | [Design Pattern : Strategy](./courses/design-pattern-strategy.md) |
+| ⭐⭐⭐ | Command | Actions undo/redo, queues de tâches, event sourcing | [Design Pattern : Command](./courses/design-pattern-command.md) |
+| ⭐⭐⭐ | Template Method | Workflows métier, pipelines de traitement | [Design Pattern : Template-Method](./courses/design-pattern-template-method.md) |
+| ⭐⭐⭐ | Chain of Responsibility | Middleware, validation en chaîne, error handling | [Design Pattern : Chain-of-Responsibility](./courses/design-pattern-chain-of-responsibility.md) |
+| ⭐⭐ | State | Gestion états formulaire, workflow documents | [Design Pattern : State](./courses/design-pattern-state.md) |
+| ⭐⭐ | Mediator | Communication entre composants, event bus | [Design Pattern : Mediator](./courses/design-pattern-mediator.md) |
+| ⭐⭐ | Iterator | Parcourir collections, pagination | [Design Pattern : Iterator](./courses/design-pattern-iterator.md) |
+| ⭐ | Memento | Historique, snapshots d'état, undo/redo | [Design Pattern : Memento](./courses/design-pattern-memento.md) |
+| ⭐ | Visitor | Opérations sur structures complexes (AST, DOM) | [Design Pattern : Visitor](./courses/design-pattern-visitor.md) |
+| ⭐ | Interpreter | Parsers, DSL, règles métier complexes | [Design Pattern : Interpreter](./courses/design-pattern-interpreter.md) |
+
+#### Pattern Spécifique Web
+| Priorité | Pattern | Usage typique webapp métier | Cours |
+|----------|---------|----------------------------|-------|
+| ⭐⭐⭐ | DTO (Data Transfer Object) | Contrats Front ↔ Back, API REST | [Design Pattern : DTO](./courses/design-pattern-dto.md) |
+
+### Légende priorités
+- ⭐⭐⭐ : **Essentiel** - Utilisé quotidiennement dans les webapps métier
+- ⭐⭐ : **Important** - Utilisé régulièrement pour des cas spécifiques
+- ⭐ : **Occasionnel** - Utilisé pour des besoins avancés ou spécifiques
 
 ### Ressources
-- [ ] https://refactoring.guru/fr/design-patterns
+- [ ] https://refactoring.guru/fr/design-patterns (Catalogue complet en français)
 - [ ] https://www.youtube.com/watch?v=tv-_1er1mWI (Design Patterns en TypeScript)
 - [ ] https://sbcode.net/typescript/design_patterns/ (TypeScript Design Patterns)
+- [ ] https://angular.io/guide/dependency-injection (DI et patterns Angular)
 
 ---
 
