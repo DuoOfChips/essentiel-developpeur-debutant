@@ -14,7 +14,7 @@ Après avoir lu ce cours, vous serez capable de :
 SOLID permet de :
 - **Maintenir** le code facilement
 - **Tester** le code efficacement
-- **Évol uer** le code sans tout casser
+- **Évoluer** le code sans tout casser
 - **Comprendre** le code rapidement
 - **Collaborer** sereinement en équipe
 
