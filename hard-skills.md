@@ -113,17 +113,19 @@ Objectif : écrire du code **maintenable, lisible, modulaire**.
 Objectif : éviter de réinventer la roue et structurer le code.
 
 ### Patterns prioritaires (avec usages concrets web)
-| Pattern | Usage typique |
-|---|---|
-| Builder | configurer snackbars / modals / formulaires |
-| Factory | créer services API selon environnement |
-| Strategy | remplacer `if/else` multiples (ex: calcul TVA) |
-| Adapter | uniformiser API externes |
-| Observer | streaming d’événements UI / RxJS |
-| DTO | contrats Front ↔ Back |
+| Pattern | Usage typique | Cours |
+|---|---|---|
+| Builder | configurer snackbars / modals / formulaires | [Design Pattern : Builder](./courses/design-pattern-builder.md) |
+| Factory | créer services API selon environnement | [Design Pattern : Factory](./courses/design-pattern-factory.md) |
+| Strategy | remplacer `if/else` multiples (ex: calcul TVA) | [Design Pattern : Strategy](./courses/design-pattern-strategy.md) |
+| Adapter | uniformiser API externes | [Design Pattern : Adapter](./courses/design-pattern-adapter.md) |
+| Observer | streaming d'événements UI / RxJS | [Design Pattern : Observer](./courses/design-pattern-observer.md) |
+| DTO | contrats Front ↔ Back | [Design Pattern : DTO](./courses/design-pattern-dto.md) |
 
-### Ressource
+### Ressources
 - [ ] https://refactoring.guru/fr/design-patterns
+- [ ] https://www.youtube.com/watch?v=tv-_1er1mWI (Design Patterns en TypeScript)
+- [ ] https://sbcode.net/typescript/design_patterns/ (TypeScript Design Patterns)
 
 ---
 
