@@ -407,7 +407,7 @@ export class DatabaseService {
   
   private async initializeConnection(): Promise<void> {
     const dbUrl = this.configService.get<string>('DATABASE_URL');
-    console.log(`Connecting to ${dbUrl}...`);
+    console.log('Connecting to database...');
     // Créer connexion
   }
   
