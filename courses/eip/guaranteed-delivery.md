@@ -32,8 +32,13 @@ Après ce cours, vous pourrez :
 
 Le **Guaranteed Delivery** est un pattern qui garantit qu'**un message sera livré à son destinataire même en cas de crash du système** (sender, receiver, ou broker).
 
+**Trade-offs importants** :
+- **Performance** : La persistence sur disque est plus lente que la mémoire
+- **Complexité** : Nécessite plus de code (ACK, retry, monitoring)
+- **Coût** : Requiert plus de ressources (stockage, mémoire)
+
 **Analogie de la vie quotidienne :**
-Imaginez que vous envoyez un colis en recommandé avec accusé de réception. La poste garantit la livraison : si le facteur ne peut pas livrer, il réessaiera. Le colis est enregistré et tracé à chaque étape. Même si un camion tombe en panne, le colis sera récupéré et livré. C'est du Guaranteed Delivery.
+Imaginez que vous envoyez un colis en recommandé avec accusé de réception. La poste garantit la livraison : si le facteur ne peut pas livrer, il réessaiera. Le colis est enregistré et tracé à chaque étape. Même si un camion tombe en panne, le colis sera récupéré et livré. C'est du Guaranteed Delivery - plus fiable mais plus cher qu'un envoi standard.
 
 ### 2.2 Trois piliers du Guaranteed Delivery
 
@@ -101,7 +106,7 @@ export class PaymentQueueService {
       attempts: 5,
       backoff: {
         type: 'exponential',
-        delay: 2000,
+        delay: 2000, // Start at 2s, then 4s, 8s, 16s, 32s
       },
       
       // 3. Timeout

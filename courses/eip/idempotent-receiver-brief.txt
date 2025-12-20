@@ -1,0 +1,9 @@
+Structure minimale pour les cours restants:
+- Introduction (objectifs, scope)
+- Définition avec analogie
+- 2-3 cas d'usage TypeScript/NestJS
+- Implémentation basique
+- 3 erreurs courantes
+- 2 exercices
+- Résumé et ressources
+~800-1000 lignes au lieu de 1300

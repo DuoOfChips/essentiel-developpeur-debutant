@@ -131,7 +131,7 @@ export class MessageBusService {
   async publishEvent<T>(eventType: string, data: T): Promise<void> {
     await this.messageBus.emit(eventType, {
       type: eventType,
-      timestamp: new Date(),
+      timestamp: Date.now(), // Better performance than new Date()
       data,
     });
   }
@@ -139,7 +139,7 @@ export class MessageBusService {
   async sendCommand<T, R>(commandType: string, data: T): Promise<R> {
     return this.messageBus.send(commandType, {
       type: commandType,
-      timestamp: new Date(),
+      timestamp: Date.now(), // Better performance than new Date()
       data,
     }).toPromise();
   }

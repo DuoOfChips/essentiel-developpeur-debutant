@@ -134,11 +134,13 @@ Chaque cours suit rigoureusement la structure demandée :
 - ✅ **Senior tips** - Patterns avancés, observabilité, tests
 
 ### Métriques
+- **Cours complétés** : 8/41 (19.5%)
 - **Taille moyenne par cours** : ~28KB (~1000 lignes)
 - **Total créé** : 239KB de documentation technique
-- **Nombre de cours** : 8/41 (19.5% complet)
 - **Temps de lecture estimé** : ~2-3h par cours
 - **Niveau** : Débutant à Senior
+
+> **Note**: Ces métriques sont mises à jour manuellement à chaque batch de cours créés.
 
 ## Patterns Restants à Créer
 
