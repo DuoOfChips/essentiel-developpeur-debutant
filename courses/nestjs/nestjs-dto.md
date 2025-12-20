@@ -336,12 +336,20 @@ export class CreateUserDto {
 **UpdateUserDto** :
 ```typescript
 // src/users/dto/update-user.dto.ts
-import { PartialType } from '@nestjs/mapped-types';
+import { PartialType, OmitType } from '@nestjs/mapped-types';
 import { CreateUserDto } from './create-user.dto';
 
-export class UpdateUserDto extends PartialType(CreateUserDto) {
-  // Optionnel : ajouter des champs spécifiques à l'update
-  currentPassword?: string;  // Pour vérifier avant de changer le mot de passe
+// UpdateUserDto sans le password pour sécurité
+export class UpdateUserDto extends PartialType(
+  OmitType(CreateUserDto, ['password'] as const)
+) {}
+
+// DTO séparé pour changer le mot de passe (meilleure sécurité)
+// src/users/dto/change-password.dto.ts
+export class ChangePasswordDto {
+  currentPassword: string;
+  newPassword: string;
+  confirmPassword: string;
 }
 ```
 

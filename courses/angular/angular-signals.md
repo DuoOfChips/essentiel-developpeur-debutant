@@ -64,9 +64,9 @@ export class ProductListComponent {
   products: Product[] = [];  // Simple propriété
   
   updatePrice(productId: number, newPrice: number) {
-    const product = this.products.find(p => p.id === productId);
-    if (product) {
-      product.price = newPrice;  
+    const index = this.products.findIndex(p => p.id === productId);
+    if (index !== -1) {
+      this.products[index].price = newPrice;  
       // ⚠️ Angular doit vérifier TOUT le composant et ses enfants
     }
   }
@@ -85,13 +85,13 @@ export class ProductListComponent {
   products = signal<Product[]>([]);  // ✅ Signal
   
   updatePrice(productId: number, newPrice: number) {
-    this.products.update(current => {
-      const product = current.find(p => p.id === productId);
-      if (product) {
-        product.price = newPrice;
-      }
-      return [...current];  // Nouvelle référence
-    });
+    this.products.update(current => 
+      current.map(product =>
+        product.id === productId
+          ? { ...product, price: newPrice }  // ✅ Nouvelle instance de product
+          : product
+      )
+    );
     // ✅ Angular sait exactement que products a changé
     // ✅ Seules les vues utilisant products() sont mises à jour
   }
@@ -223,7 +223,7 @@ export class TodoListComponent {
     this.tasks.update(current =>
       current.map(task =>
         task.id === taskId
-          ? { ...task, completed: !task.completed }
+          ? { ...task, completed: !task.completed }  // ✅ Nouvelle instance de task
           : task
       )
     );
@@ -231,7 +231,7 @@ export class TodoListComponent {
   
   deleteTask(taskId: number) {
     this.tasks.update(current =>
-      current.filter(task => task.id !== taskId)
+      current.filter(task => task.id !== taskId)  // ✅ Nouveau tableau
     );
   }
   

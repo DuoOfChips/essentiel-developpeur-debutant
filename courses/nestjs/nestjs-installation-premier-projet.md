@@ -90,7 +90,9 @@ node --version  # Doit afficher v18+ ou v20+
 npm --version   # Doit afficher 9+ ou 10+
 ```
 
-### Étape 2 : Installer NestJS CLI globalement
+### Étape 2 : Installer NestJS CLI
+
+**Option 1 : Installation globale (recommandée pour débuter)**
 
 ```bash
 npm install -g @nestjs/cli
@@ -99,6 +101,24 @@ npm install -g @nestjs/cli
 **Explication** :
 - `npm install -g` : Installation globale (disponible partout)
 - `@nestjs/cli` : Outil en ligne de commande NestJS
+
+**Option 2 : Utiliser npx (sans installation globale)**
+
+```bash
+npx @nestjs/cli new mon-projet
+# npx télécharge et exécute temporairement la dernière version
+```
+
+**Avantages de npx** :
+- ✅ Pas de conflits de versions globales
+- ✅ Toujours la dernière version
+- ✅ Pas de problèmes de permissions
+
+**Avantages de l'installation globale** :
+- ✅ Plus rapide (pas de téléchargement à chaque fois)
+- ✅ Commandes plus courtes (`nest` au lieu de `npx @nestjs/cli`)
+
+Pour ce cours, nous utiliserons l'installation globale pour simplifier.
 
 ### Étape 3 : Vérifier l'installation
 
