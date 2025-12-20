@@ -467,10 +467,12 @@ export class ProductsService {
       throw new Error(`Product with ID ${id} not found`);
     }
     
+    // Exclure l'id de productData pour éviter de l'écraser
+    const { id: _, ...updates } = productData;
     this.products[index] = {
       ...this.products[index],
-      ...productData,
-      id,  // S'assurer que l'ID ne change pas
+      ...updates,
+      id,  // S'assurer que l'ID reste inchangé
     };
     
     return this.products[index];

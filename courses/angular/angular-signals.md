@@ -246,9 +246,9 @@ export class TodoListComponent {
 **⚠️ Règle importante** : Avec les tableaux et objets, utilisez toujours l'immutabilité (créez de nouvelles instances au lieu de modifier en place).
 
 ```typescript
-// ❌ MAUVAIS - mutation directe
+// ❌ MAUVAIS - mutation directe (viole les bonnes pratiques)
 this.tasks.update(current => {
-  current.push(newTask);  // Ne déclenche PAS la réactivité!
+  current.push(newTask);  // Mutation, peut causer des problèmes de performance
   return current;
 });
 

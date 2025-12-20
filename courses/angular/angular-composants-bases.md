@@ -346,7 +346,7 @@ interface Product {
   `]
 })
 export class ProductItemComponent {
-  @Input({ required: true }) product: Product;  // Données reçues du parent (required dans Angular 17+)
+  @Input({ required: true }) product: Product;  // Données reçues du parent (required dès Angular 17+)
   @Output() addToCart = new EventEmitter<Product>();  // Événement vers le parent
 
   onAddClick(): void {
