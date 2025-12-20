@@ -9,7 +9,7 @@ Le fichier `hard-skills.md` a été mis à jour avec une liste exhaustive de **5
 - **Catégories fonctionnelles** (Messaging Channels, Message Construction, Routing, Transformation, Endpoints, System Management)
 - **Technologies** (RabbitMQ, Kafka, Redis, NestJS, Azure Service Bus, AWS SQS/SNS)
 
-### 2. Cours Complets Créés (5/50+)
+### 2. Cours Complets Créés (8/41)
 
 #### Patterns Haute Priorité (Complets) ✅
 
@@ -45,6 +45,27 @@ Le fichier `hard-skills.md` a été mis à jour avec une liste exhaustive de **5
    - Monitoring et alerting
    - Recovery manuel et automatique
    - Pattern detection
+
+6. **Point-to-Point Channel** (25KB)
+   - Queue avec consommation unique par message
+   - Load balancing automatique
+   - Bull/Redis et RabbitMQ
+   - Concurrence et prefetch
+   - Priority queues et rate limiting
+
+7. **Guaranteed Delivery** (24KB)
+   - Persistence et durabilité des messages
+   - ACK/NACK manuel
+   - Stratégies de retry
+   - Pattern Outbox
+   - Dead Letter Queue
+
+8. **Message Bus** (24KB)
+   - Infrastructure centralisée de messaging
+   - Routage et transformation
+   - Découplage de services
+   - Monitoring et tracing
+   - Schema validation
 
 ### 3. Structure de Chaque Cours
 
@@ -113,37 +134,30 @@ Chaque cours suit rigoureusement la structure demandée :
 - ✅ **Senior tips** - Patterns avancés, observabilité, tests
 
 ### Métriques
-- **Taille moyenne par cours** : ~33KB (~1200 lignes)
-- **Total créé** : 166KB de documentation technique
+- **Taille moyenne par cours** : ~28KB (~1000 lignes)
+- **Total créé** : 239KB de documentation technique
+- **Nombre de cours** : 8/41 (19.5% complet)
 - **Temps de lecture estimé** : ~2-3h par cours
 - **Niveau** : Débutant à Senior
 
 ## Patterns Restants à Créer
 
-### Haute Priorité (0/11)
-- Point-to-Point Channel
-- Guaranteed Delivery
-- Message Bus
+### Haute Priorité - Message Construction (0/3)
 - Correlation Identifier
 - Return Address
 - Message Expiration
-- Document Message
-- Idempotent Receiver
-- Service Activator
-- Competing Consumers
-- Message Filter
 
-### Priorité Moyenne - Routing (0/8)
+### Haute Priorité - Message Routing (0/8)
 - Content-Based Router
+- Message Filter
 - Dynamic Router
 - Recipient List
 - Splitter
 - Aggregator
 - Resequencer
 - Routing Slip
-- Scatter-Gather
 
-### Priorité Moyenne - Transformation (0/7)
+### Haute Priorité - Message Transformation (0/7)
 - Message Translator
 - Envelope Wrapper
 - Content Enricher
@@ -152,13 +166,15 @@ Chaque cours suit rigoureusement la structure demandée :
 - Normalizer
 - Canonical Data Model
 
-### Priorité Moyenne - Endpoints (0/4)
+### Haute Priorité - Messaging Endpoints (0/6)
 - Polling Consumer
 - Event-Driven Consumer
+- Competing Consumers
 - Message Dispatcher
-- Channel Adapter
+- Idempotent Receiver
+- Service Activator
 
-### Priorité Basse - System Management (0/6)
+### Haute Priorité - System Management (0/6)
 - Control Bus
 - Detour
 - Wire Tap
@@ -166,13 +182,19 @@ Chaque cours suit rigoureusement la structure demandée :
 - Message Store
 - Smart Proxy
 
-### Priorité Basse - Avancé (0/9)
+### Priorité Moyenne - Advanced Routing (0/3)
+- Process Manager
+- Scatter-Gather
+- Composed Message Processor
+
+### Priorité Moyenne - Messaging Systems (0/5)
+- Channel Adapter
 - Messaging Bridge
 - Messaging Gateway
 - Messaging Mapper
 - Transactional Client
-- Process Manager
-- Composed Message Processor
+
+### Priorité Basse - Performance & Reliability (0/4)
 - Datatype Channel
 - Invalid Message Channel
 - Channel Purger
@@ -188,7 +210,7 @@ Continuer à créer tous les cours avec la même qualité, en priorisant :
 4. **Message Transformation** (Message Translator, Content Enricher, Normalizer)
 5. **Patterns Avancés** selon les besoins
 
-**Estimation** : ~45 cours restants × 2-3h/cours = ~90-135h de travail
+**Estimation** : ~33 cours restants × 2-3h/cours = ~66-99h de travail
 
 ### Option 2 : Approche Agile (MVP)
 Créer des cours plus courts (~500 lignes) pour les patterns restants :
@@ -197,7 +219,7 @@ Créer des cours plus courts (~500 lignes) pour les patterns restants :
 - Implémentation basique NestJS
 - Ressources externes
 
-**Estimation** : ~45 cours × 30min = ~22h de travail
+**Estimation** : ~33 cours × 30min = ~16.5h de travail
 
 ### Option 3 : Documentation par Catégorie
 Regrouper les patterns similaires dans des cours thématiques :
@@ -223,8 +245,11 @@ Progression recommandée :
 3. **Request-Reply** - Communication bidirectionnelle
 4. **Publish-Subscribe** - Découplage et scalabilité
 5. **Dead Letter Channel** - Résilience et error handling
+6. **Point-to-Point Channel** - Queues et load balancing
+7. **Guaranteed Delivery** - Fiabilité et persistence
+8. **Message Bus** - Infrastructure centralisée
 
-Après ces 5 cours, l'apprenant aura une base solide en messaging et EIP.
+Après ces 8 cours, l'apprenant aura une base solide en messaging et EIP pour architecturer des systèmes distribués.
 
 ### Pour les Projets
 Les patterns couverts permettent de :
@@ -236,21 +261,28 @@ Les patterns couverts permettent de :
 
 ## Prochaines Étapes Suggérées
 
-1. **Validation** - Review des 5 cours existants par l'équipe
+1. **Validation** - Review des 8 cours existants par l'équipe
 2. **Décision** - Choisir l'approche (Complète, Agile, ou Thématique)
-3. **Planification** - Prioriser les patterns selon les besoins métier
-4. **Itération** - Créer les cours par lots de 5-10
+3. **Planification** - Prioriser les patterns selon les besoins métier immédiat
+4. **Itération** - Créer les cours par lots de 5-10, en commençant par :
+   - **Lot 1** : Message Routing (Content-Based Router, Message Filter, Aggregator, Splitter)
+   - **Lot 2** : Messaging Endpoints (Idempotent Receiver, Competing Consumers, Polling Consumer)
+   - **Lot 3** : Message Transformation (Content Enricher, Message Translator, Normalizer)
+   - **Lot 4** : System Management (Wire Tap, Message History, Control Bus)
 5. **Feedback** - Tester avec des apprenants et ajuster
 
 ## Liens Rapides
 
-- [hard-skills.md](/home/runner/work/essentiel-developpeur-debutant/essentiel-developpeur-debutant/hard-skills.md) - Liste complète des patterns
-- [Event Message](/home/runner/work/essentiel-developpeur-debutant/essentiel-developpeur-debutant/courses/eip/event-message.md)
-- [Command Message](/home/runner/work/essentiel-developpeur-debutant/essentiel-developpeur-debutant/courses/eip/command-message.md)
-- [Request-Reply](/home/runner/work/essentiel-developpeur-debutant/essentiel-developpeur-debutant/courses/eip/request-reply.md)
-- [Publish-Subscribe](/home/runner/work/essentiel-developpeur-debutant/essentiel-developpeur-debutant/courses/eip/publish-subscribe-channel.md)
-- [Dead Letter Channel](/home/runner/work/essentiel-developpeur-debutant/essentiel-developpeur-debutant/courses/eip/dead-letter-channel.md)
+- [hard-skills.md](../../hard-skills.md) - Liste complète des patterns
+- [Event Message](./event-message.md)
+- [Command Message](./command-message.md)
+- [Request-Reply](./request-reply.md)
+- [Publish-Subscribe Channel](./publish-subscribe-channel.md)
+- [Dead Letter Channel](./dead-letter-channel.md)
+- [Point-to-Point Channel](./point-to-point-channel.md)
+- [Guaranteed Delivery](./guaranteed-delivery.md)
+- [Message Bus](./message-bus.md)
 
 ---
 
-**Conclusion** : Les 5 patterns EIP les plus critiques pour les webapps métier sont maintenant documentés de manière exhaustive et production-ready. La suite dépend de la priorité : qualité maximale vs couverture rapide.
+**Conclusion** : Les 8 patterns EIP les plus critiques pour les webapps métier sont maintenant documentés de manière exhaustive et production-ready. Ces cours couvrent les fondamentaux de messaging channels, message construction et delivery garantie. La suite dépend de la priorité : qualité maximale vs couverture rapide. Les 33 patterns restants peuvent être créés progressivement selon les besoins de formation.
