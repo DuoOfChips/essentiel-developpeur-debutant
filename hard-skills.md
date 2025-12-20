@@ -151,15 +151,93 @@ Objectif : full-stack Angular + NestJS structuré.
 ---
 
 ## Phase 6 — Enterprise Integration Patterns
-Objectif : systèmes modulaires et résilients.
+Objectif : systèmes modulaires et résilients pour applications métier.
 
-### EIP utiles
-- [ ] Event-driven architecture
-- [ ] Message Queue (RabbitMQ / Kafka)
-- [ ] Dead Letter Queue
+### Patterns Essentiels (Haute fréquence dans webapps métier)
 
-### Ressource
-- [ ] https://www.youtube.com/watch?v=deG25y_r6OY
+#### 1. Messaging Channels
+- [ ] [Point-to-Point Channel](./courses/eip/point-to-point-channel.md)
+- [ ] [Publish-Subscribe Channel](./courses/eip/publish-subscribe-channel.md)
+- [ ] [Dead Letter Channel](./courses/eip/dead-letter-channel.md)
+- [ ] [Guaranteed Delivery](./courses/eip/guaranteed-delivery.md)
+- [ ] [Message Bus](./courses/eip/message-bus.md)
+
+#### 2. Message Construction
+- [ ] [Command Message](./courses/eip/command-message.md)
+- [ ] [Event Message](./courses/eip/event-message.md)
+- [ ] [Request-Reply](./courses/eip/request-reply.md)
+- [ ] [Correlation Identifier](./courses/eip/correlation-identifier.md)
+- [ ] [Return Address](./courses/eip/return-address.md)
+- [ ] [Message Expiration](./courses/eip/message-expiration.md)
+
+#### 3. Message Routing
+- [ ] [Content-Based Router](./courses/eip/content-based-router.md)
+- [ ] [Message Filter](./courses/eip/message-filter.md)
+- [ ] [Dynamic Router](./courses/eip/dynamic-router.md)
+- [ ] [Recipient List](./courses/eip/recipient-list.md)
+- [ ] [Splitter](./courses/eip/splitter.md)
+- [ ] [Aggregator](./courses/eip/aggregator.md)
+- [ ] [Resequencer](./courses/eip/resequencer.md)
+- [ ] [Routing Slip](./courses/eip/routing-slip.md)
+
+#### 4. Message Transformation
+- [ ] [Message Translator](./courses/eip/message-translator.md)
+- [ ] [Envelope Wrapper](./courses/eip/envelope-wrapper.md)
+- [ ] [Content Enricher](./courses/eip/content-enricher.md)
+- [ ] [Content Filter](./courses/eip/content-filter.md)
+- [ ] [Claim Check](./courses/eip/claim-check.md)
+- [ ] [Normalizer](./courses/eip/normalizer.md)
+- [ ] [Canonical Data Model](./courses/eip/canonical-data-model.md)
+
+#### 5. Messaging Endpoints
+- [ ] [Polling Consumer](./courses/eip/polling-consumer.md)
+- [ ] [Event-Driven Consumer](./courses/eip/event-driven-consumer.md)
+- [ ] [Competing Consumers](./courses/eip/competing-consumers.md)
+- [ ] [Message Dispatcher](./courses/eip/message-dispatcher.md)
+- [ ] [Idempotent Receiver](./courses/eip/idempotent-receiver.md)
+- [ ] [Service Activator](./courses/eip/service-activator.md)
+
+#### 6. System Management & Monitoring
+- [ ] [Control Bus](./courses/eip/control-bus.md)
+- [ ] [Detour](./courses/eip/detour.md)
+- [ ] [Wire Tap](./courses/eip/wire-tap.md)
+- [ ] [Message History](./courses/eip/message-history.md)
+- [ ] [Message Store](./courses/eip/message-store.md)
+- [ ] [Smart Proxy](./courses/eip/smart-proxy.md)
+
+### Patterns Avancés (Moyenne fréquence)
+
+#### 7. Messaging Systems
+- [ ] [Channel Adapter](./courses/eip/channel-adapter.md)
+- [ ] [Messaging Bridge](./courses/eip/messaging-bridge.md)
+- [ ] [Messaging Gateway](./courses/eip/messaging-gateway.md)
+- [ ] [Messaging Mapper](./courses/eip/messaging-mapper.md)
+- [ ] [Transactional Client](./courses/eip/transactional-client.md)
+
+#### 8. Advanced Routing
+- [ ] [Process Manager](./courses/eip/process-manager.md)
+- [ ] [Scatter-Gather](./courses/eip/scatter-gather.md)
+- [ ] [Composed Message Processor](./courses/eip/composed-message-processor.md)
+
+#### 9. Performance & Reliability
+- [ ] [Datatype Channel](./courses/eip/datatype-channel.md)
+- [ ] [Invalid Message Channel](./courses/eip/invalid-message-channel.md)
+- [ ] [Channel Purger](./courses/eip/channel-purger.md)
+- [ ] [Durable Subscriber](./courses/eip/durable-subscriber.md)
+
+### Technologies & Outils
+- [ ] RabbitMQ
+- [ ] Apache Kafka
+- [ ] Redis Pub/Sub
+- [ ] NestJS Microservices
+- [ ] Azure Service Bus
+- [ ] AWS SQS/SNS
+
+### Ressources
+- [ ] https://www.youtube.com/watch?v=deG25y_r6OY (Event-Driven Architecture)
+- [ ] https://www.enterpriseintegrationpatterns.com/ (Référence officielle)
+- [ ] https://docs.nestjs.com/microservices/basics (NestJS Microservices)
+- [ ] https://www.rabbitmq.com/getstarted.html (RabbitMQ Tutorial)
 
 ---
 
